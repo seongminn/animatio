@@ -1,9 +1,21 @@
 {
-    "name": "@animatio/core",
+    "name": "@animatio/react",
     "scripts": {
-        "dev": "turbo run dev",
-        "build": "turbo run build",
-        "lint": "biome lint ./src"
+        "build": "tsup",
+        "lint": "biome lint ./src",
+        "storybook": "storybook dev -p 6006",
+        "build-storybook": "storybook build"
     },
-    "devDependencies": {}
+    "devDependencies": {
+        "@repo/typescript-config": "workspace:*",
+        "@storybook/react-vite": "^9.0.4",
+        "@storybook/web-components-vite": "^9.0.4",
+        "@types/react": "^19.1.6",
+        "lit": "^3.3.0",
+        "react": "^19.1.0",
+        "react-dom": "^19.1.0",
+        "storybook": "^9.0.4",
+        "tsup": "^8.5.0",
+        "typescript": "5.8.2"
+    }
 }
