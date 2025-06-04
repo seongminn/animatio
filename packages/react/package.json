@@ -1,5 +1,7 @@
 {
     "name": "@animatios/react",
+    "version": "0.0.1",
+    "description": "Animatios React components for animations using Framer Motion",
     "keywords": ["animation", "react", "framer-motion"],
     "license": "MIT",
     "main": "dist/index.js",
