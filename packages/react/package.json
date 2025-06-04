@@ -4,9 +4,39 @@
     "description": "Animatios React components for animations using Framer Motion",
     "keywords": ["animation", "react", "framer-motion"],
     "license": "MIT",
-    "main": "dist/index.js",
-    "module": "dist/index.mjs",
-    "types": "dist/index.d.ts",
+    "main": "src/index.js",
+    "module": "src/index.mjs",
+    "exports": {
+        ".": "./src/index.ts",
+        "./*": "./src/components/*.ts"
+    },
+    "publishConfig": {
+        "main": "./dist/index.js",
+        "module": "./dist/index.mjs",
+        "types": "./dist/index.d.ts",
+        "exports": {
+            ".": {
+                "import": {
+                    "types": "./dist/index.d.mts",
+                    "default": "./dist/index.mjs"
+                },
+                "require": {
+                    "types": "./dist/index.d.ts",
+                    "default": "./dist/index.js"
+                }
+            },
+            "./*": {
+                "import": {
+                    "types": "./dist/*.d.mts",
+                    "default": "./dist/*.mjs"
+                },
+                "require": {
+                    "types": "./dist/*.d.ts",
+                    "default": "./dist/*.js"
+                }
+            }
+        }
+    },
     "files": ["dist"],
     "repository": {
         "type": "git",
@@ -15,10 +45,6 @@
     },
     "bugs": {
         "url": "https://github.coxm/seongminn/animatios/issues"
-    },
-    "exports": {
-        ".": "./src/index.ts",
-        "./*": "./src/components/*/index.ts"
     },
     "scripts": {
         "build": "tsup",

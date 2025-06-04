@@ -16,7 +16,7 @@ export default [
         entry: ['src/**/index.ts'],
         clean: true,
         dts: { only: true },
-        outDir: 'dist/types',
+        outDir: 'dist',
         external: ['react', 'react-dom'],
         bundle: false,
     }),
