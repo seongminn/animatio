@@ -17,7 +17,7 @@
         "exports": {
             ".": {
                 "import": {
-                    "types": "./dist/index.d.mts",
+                    "types": "./dist/index.d.ts",
                     "default": "./dist/index.mjs"
                 },
                 "require": {
@@ -27,7 +27,7 @@
             },
             "./*": {
                 "import": {
-                    "types": "./dist/*.d.mts",
+                    "types": "./dist/*.d.ts",
                     "default": "./dist/*.mjs"
                 },
                 "require": {
