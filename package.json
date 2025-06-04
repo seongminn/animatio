@@ -2,9 +2,10 @@
     "name": "animatio",
     "private": true,
     "scripts": {
+        "dev": "pnpm storybook",
         "build": "turbo run build",
-        "dev": "turbo run dev",
         "lint": "turbo run lint",
+        "storybook": "pnpm react storybook",
         "react": "pnpm --filter @animatio/react"
     },
     "devDependencies": {
@@ -14,6 +15,6 @@
     },
     "packageManager": "pnpm@9.0.0",
     "engines": {
-        "node": ">=18"
+        "node": ">=20"
     }
 }
