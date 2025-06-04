@@ -1,11 +1,30 @@
 {
     "name": "@animatios/react",
+    "keywords": ["animation", "react", "framer-motion"],
+    "license": "MIT",
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "files": ["dist"],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/seongminn/animatios.git",
+        "directory": "packages/react"
+    },
+    "bugs": {
+        "url": "https://github.coxm/seongminn/animatios/issues"
+    },
+    "exports": {
+        ".": "./src/index.ts",
+        "./*": "./src/components/*/index.ts"
+    },
     "scripts": {
         "build": "tsup",
         "lint": "biome lint ./src",
         "storybook": "storybook dev -p 6006",
         "build-storybook": "storybook build"
     },
+
     "devDependencies": {
         "@repo/typescript-config": "workspace:*",
         "@storybook/react-vite": "^9.0.4",
