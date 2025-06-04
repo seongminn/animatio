@@ -1,0 +1,9 @@
+{
+    "name": "@animatio/core",
+    "scripts": {
+        "dev": "turbo run dev",
+        "build": "turbo run build",
+        "lint": "biome lint ./src"
+    },
+    "devDependencies": {}
+}
