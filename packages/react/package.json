@@ -1,6 +1,6 @@
 {
     "name": "@animatios/react",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Animatios React components for animations using Framer Motion",
     "keywords": ["animation", "react", "framer-motion"],
     "license": "MIT",
